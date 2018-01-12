@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /BOTS
-Disallow: /Support
-Disallow: /PabloZEBI
