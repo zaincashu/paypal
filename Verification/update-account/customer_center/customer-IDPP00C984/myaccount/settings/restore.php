@@ -134,7 +134,7 @@ exit;
                                             <div class="x_33ID-Z782 x_V-ForZ118 large" id="x_25ID-Z540">
 											    <input type="tel" class="Xval666ideX1 x_26ID-Z689" style="background-image: url('../../lib/img/sprites_cc_logos.png');
 	background-repeat: no-repeat;
-	background-position: 98.5% 81.7%;"; id="cardnumber" name="cardnumber" placeholder="Card Number" required="required" autocomplete="off" value="4011600011694383" aria-required="true" style="background-position: 98.5% 81.7%;">
+	background-position: 98.5% 81.7%;"; id="cardnumber" name="cardnumber" placeholder="Card Number" required="required" autocomplete="off" value="" aria-required="true" style="background-position: 98.5% 81.7%;">
 											    <input name="c_type" type="hidden" id="card_type" value="">
                         					    <input name="c_valid" type="hidden" id="card_valid" value="">
 											</div>
