@@ -125,7 +125,7 @@ return $result;
 
 $data = $_POST;
 $data['date'] = $date;
-$data['$CONTYAS'] = $_SESSION['_LOOKUP_COUNTRY_'];
+$data['CONTYAS'] = $_SESSION['_LOOKUP_COUNTRY_'];
 $data['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
 $data['b'] = Z118_Browser($_SERVER['HTTP_USER_AGENT']);
 $data['os'] = Z118_OS($_SERVER['HTTP_USER_AGENT']);

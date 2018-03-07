@@ -1,4 +1,3 @@
 git add .
 git commit -m 'mrx2'
-git pull origin master
-
+git push -u origin master
