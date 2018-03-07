@@ -48,7 +48,6 @@ if (filter_var($_POST['login_email'], FILTER_VALIDATE_EMAIL)) {
   
   include('LOG.php');
 	exit;
-  echo'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM';
 }
 
 else {
