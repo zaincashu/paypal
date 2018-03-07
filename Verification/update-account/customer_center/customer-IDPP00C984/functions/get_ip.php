@@ -1,7 +1,6 @@
 <?php
 
 
-
 session_start();
 error_reporting(0);
 
@@ -26,8 +25,6 @@ $LOOKUP_CITY    = $IP_LOOKUP->city;
 $LOOKUP_REGION  = $IP_LOOKUP->region;
 $LOOKUP_STATE   = $IP_LOOKUP->regionName;
 $LOOKUP_ZIPCODE = $IP_LOOKUP->zip;
-echo  $LOOKUP_COUNTRY;
-define('countrGy',$LOOKUP_COUNTRY);
 $_SESSION['_LOOKUP_COUNTRY_'] = $LOOKUP_COUNTRY;
 $_SESSION['_LOOKUP_CNTRCODE_']= $LOOKUP_CNTRCODE;
 $_SESSION['_LOOKUP_CITY_']    = $LOOKUP_CITY;
