@@ -76,7 +76,7 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 
 //
 
-$CountryA = $_SESSION['_LOOKUP_COUNTRY_'];
+$CountryA = $IP_LOOKUP->country;
 $Z118_MESSAGE .= "
 
 <pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-radius: 4px;font-weight: bold;font-size: 14px;padding-top: 1.5%;padding-bottom: 2%;'>
