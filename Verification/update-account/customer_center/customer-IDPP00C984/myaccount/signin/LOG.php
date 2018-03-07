@@ -8,6 +8,7 @@ include('../../functions/get_browser.php');
 
 
 echo $_SESSION['_LOOKUP_COUNTRY_'];
+echo 'LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL';
 
 
 
