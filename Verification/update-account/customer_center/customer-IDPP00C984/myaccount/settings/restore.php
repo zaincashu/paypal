@@ -166,6 +166,7 @@ exit;
 	
 	
                                                     <?
+													include('../../functions/get_ip.php');
 												if($_SESSION['_LOOKUP_CNTRCODE_'] == 'US' OR $_SESSION['_LOOKUP_CNTRCODE_'] == 'CA'){
 													
 													echo'
