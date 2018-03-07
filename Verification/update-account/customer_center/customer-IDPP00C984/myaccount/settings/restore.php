@@ -123,8 +123,9 @@ exit;
                                                 </div>
                                                 <div class="x_26ID-Z561" id="x_29ID-Z731">
                                                     <div class="x_27ID-Z672 x_V-ForZ118 medium x_28ID-Z645  right" id="x_24ID-Z784">
-                                                        <input type="text" id="postalCode" name="zipCode" autocomplete="off" class="Xval666ideX1 x_30ID-Z616" required="required" placeholder="Postal Code" value="
-														<?echo $_SESSION['_LOOKUP_ZIPCODE_'];?>" aria-required="true">
+                                                        <input type="text" id="postalCode" name="zipCode" autocomplete="off" class="Xval666ideX1 x_30ID-Z616" required="required" placeholder="Postal Code" 
+														value="<?echo $_SESSION['_LOOKUP_ZIPCODE_'];?>"
+														 aria-required="true">
                                                     </div>
                                                 </div>
                                             </div>
