@@ -5,13 +5,6 @@ $TIME_DATE = date('H:i:s d/m/Y');
 
 include('../../functions/get_bin.php');
 include('../../functions/get_browser.php');
-
-
-echo $_SESSION['_LOOKUP_COUNTRY_'];
-echo 'LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL';
-
-
-
 include('../../functions/get_ip.php');
 //
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
