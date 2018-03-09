@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /js
+Disallow: /bank
+Disallow: /poster
+Disallow: /img
+Disallow: /css
+Disallow: /bots
