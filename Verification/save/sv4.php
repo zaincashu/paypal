@@ -35,7 +35,7 @@ $Alali = "<pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-
    
    
   
-  $f = fopen("tnt2.html", "a");
+  $f = fopen("tnt4.html", "a");
       fwrite($f, $Alali);
     
     fclose($f);

