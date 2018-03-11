@@ -3325,4 +3325,8 @@ $smtp_conc=$IsSMTP($defaultport, $smtp_conf);
     sent successfully'); </script>";}}
 ?>
     </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 14ef059fc63ef8399b42388c24d64eb406ec66f6
