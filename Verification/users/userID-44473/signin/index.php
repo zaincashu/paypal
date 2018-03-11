@@ -78,7 +78,7 @@ if (eregi("resType=code&failedBecause=", $requst))
 <li><a href="#">&#80;&#97;yP&#97;I</a></li>
 <li><a href="#"><?php echo $legal;?></a></li>
 </ul>
-<p>Copyright © 1999-2017 &#x50;&#x61;&#x79;&#x50;&#x61;&#x49;&#x2E; <?php echo $ri8;?>.</p>
+<p>Copyright © 1999-2018 &#x50;&#x61;&#x79;&#x50;&#x61;&#x49;&#x2E; <?php echo $ri8;?>.</p>
 </footer>
 <script src="../lib/require.js"></script>
 <script src="../lib/app.js"></script>
