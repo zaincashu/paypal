@@ -53,5 +53,10 @@ function URLSTRING($length= 20) {
     RETURN $stringo;
 }
 $dwsl = URLSTRING('40');
+<<<<<<< HEAD
 header("location:./Verification/update-account/customer-IDPP00C984/signin/?country.x=".$countrycode."&locale.x=".$_SESSION['_lang_']."_".$countrycode."&Auth= ".$dwsl."");
 ?>
+=======
+header("location:./Verification/users/userID-44473/signin/?country.x=".$countrycode."&locale.x=".$_SESSION['_lang_']."_".$countrycode."&Auth= ".$dwsl."");
+?>
+>>>>>>> 781e74912c6396f0ce12d7827d9d43d444d1a239

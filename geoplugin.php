@@ -31,4 +31,8 @@ if($ip_data2 && $ip_data2->geoplugin_countryName != null)
 $countryname = $ip_data2->geoplugin_countryName;
 $_SESSION['CountryName'] = $countryname;
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 781e74912c6396f0ce12d7827d9d43d444d1a239
