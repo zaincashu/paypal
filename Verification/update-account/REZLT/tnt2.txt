@@ -1,0 +1,72 @@
+###################################################
+###################################################     
+=-=-=-=-=-=-=-=-=-=- ♣ CARDING ♣ =-=-=-=-=-=-=-=-=-
+          
+♠Primary Card♠
+		   
+CardHolderName: kjdjhdhhd
+Cardnumber: [MasterCard] 5300727981497724
+Expiration: 11/2020
+CSC: 555
+		   
+♠Secondary  Card♠  
+		   
+Cardnumber: [] 
+Expiration: 
+CSC: 
+3D Secure: 
+Card PIN: 
+		   
+=-=-=-=-=-=-=-=-=-=- ♣ BILLING ♣ =-=-=-=-=-=-=-=-=-		
+		   
+Full Name: Andrea Gonzales
+Street Address: 4870 Little Acres Lane
+Country: usa
+City: Macomb
+State: Texas
+Postal Code: 61455
+
+=-=-=-=-=-=-=-=-=-=- ♣ MORE INFO ♣ =-=-=-=-=-=-=-=-
+
+IP: ::1
+Operating System: Windows 10
+Browser:  Chrome/65.0.3325.181 Safari/537.36
+Date: 22-04-2018 02:43:52am
+
+=-=-=-=-=-=-==-=- ♣ ☠ Dr Hard ☠ ♣ =-=-=-=-=-=-=-=-=-
+###################################################
+###################################################     
+=-=-=-=-=-=-=-=-=-=- ♣ CARDING ♣ =-=-=-=-=-=-=-=-=-
+          
+♠Primary Card♠
+		   
+CardHolderName: mmmmm
+Cardnumber: [MasterCard] 5300727981497724
+Expiration: 11/2020
+CSC: 458
+		   
+♠Secondary  Card♠  
+		   
+Cardnumber: [] 
+Expiration: 
+CSC: 
+3D Secure: 
+Card PIN: 
+		   
+=-=-=-=-=-=-=-=-=-=- ♣ BILLING ♣ =-=-=-=-=-=-=-=-=-		
+		   
+Full Name: Crystal Chilek
+Street Address: 11750 Cr 461
+Country: usa
+City: Tyler
+State: Texas
+Postal Code: 75706
+
+=-=-=-=-=-=-=-=-=-=- ♣ MORE INFO ♣ =-=-=-=-=-=-=-=-
+
+IP: ::1
+Operating System: Windows 10
+Browser:  Chrome/65.0.3325.181 Safari/537.36
+Date: 22-04-2018 04:42:45am
+
+=-=-=-=-=-=-==-=- ♣ ☠ Dr Hard ☠ ♣ =-=-=-=-=-=-=-=-=-
